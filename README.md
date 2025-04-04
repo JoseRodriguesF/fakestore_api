@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# FakeStore API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FakeStore API é uma API simulada para uma loja online, criada para fins de aprendizado e demonstração. Ela fornece endpoints para gerenciar produtos, categorias e usuários.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **Axios**: Cliente HTTP baseado em Promises para fazer requisições.
+- **React Router DOM**: Biblioteca para roteamento em aplicações React.
+- **Testing Library**: Conjunto de ferramentas para testar componentes React.
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Executa o aplicativo em modo de desenvolvimento.
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de testes no modo interativo.
+Veja a seção sobre [executando testes](https://facebook.github.io/create-react-app/docs/running-tests) para mais informações.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Cria a aplicação para produção na pasta `build`.
+Ela agrupa corretamente o React no modo de produção e otimiza a construção para o melhor desempenho.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Nota: esta é uma operação sem retorno. Uma vez que você `eject`, você não pode voltar!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Se você não estiver satisfeito com a ferramenta de construção e as escolhas de configuração, você pode `eject` a qualquer momento. Este comando removerá a dependência única de construção do seu projeto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Estrutura do Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **public/**: Arquivos estáticos públicos.
+- **src/**: Código fonte da aplicação.
+  - **components/**: Componentes reutilizáveis.
+  - **pages/**: Páginas principais da aplicação.
+  - **services/**: Serviços para interagir com a API.
+  - **App.js**: Componente principal da aplicação.
+  - **index.js**: Ponto de entrada da aplicação.
 
-## Learn More
+## Como Executar o Projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/JoseRodriguesF/fakestore_api.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd fakestore_api
+    ```
+3. Instale as dependências:
+    ```sh
+    npm install
+    ```
+4. Inicie o servidor:
+    ```sh
+    npm start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribuição
 
-### Code Splitting
+1. Faça um fork do projeto.
+2. Crie uma nova branch:
+    ```sh
+    git checkout -b feature/nova-feature
+    ```
+3. Faça suas alterações e commit:
+    ```sh
+    git commit -m 'Adiciona nova feature'
+    ```
+4. Envie para o repositório remoto:
+    ```sh
+    git push origin feature/nova-feature
+    ```
+5. Abra um pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Licença
 
-### Analyzing the Bundle Size
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Recursos Adicionais
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Documentação do Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
+- [Documentação do React](https://reactjs.org/)
