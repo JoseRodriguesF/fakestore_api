@@ -1,38 +1,156 @@
-.App {
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que o box model seja consistente */
+  width: 100%;
+  height: 100%;
+}
+
+.product-detail {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .product-detail img {
+    max-width: 300px;
+  }
+
+.container {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.products {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px; /* Espaçamento consistente entre os cards */
 }
 
-.App-link {
-  color: #61dafb;
+.product-card {
+  border: 1px solid #f1efef;
+  padding: 10px;
+  margin: 10px;
+  width: 220px; /* Largura fixa para todos os cards */
+  height: 350px; /* Altura fixa para padronizar os cards */
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  display: flex; /* Torna o card flexível */
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  justify-content: space-between; /* Garante que o botão fique na parte inferior */
+  overflow: hidden; /* Evita que o conteúdo ultrapasse os limites do card */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-card img {
+  width: 150px; /* Define uma largura fixa */
+  height: 150px; /* Define uma altura fixa */
+  object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333; /* Cor do texto */
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666; /* Cor do preço */
+  margin: 5px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Cor do texto */
+  background-color: #007bff; /* Cor de fundo */
+  border: none;
+  border-radius: 8px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove o sublinhado */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+  margin-top: auto; /* Garante que o botão fique na parte inferior */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+
+/* Header */
+.header {
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .nav {
+  display: flex;
+  gap: 15px;
+}
+
+.header .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.header .nav-link:hover {
+  color: #ffdd57; /* Cor ao passar o mouse */
+}
+
+/* Footer */
+.footer {
+  background-color: #f1f1f1; /* Cor de fundo */
+  color: #333; /* Cor do texto */
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd; /* Linha separadora */
+}
+
+.footer .footer-link {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer .footer-link:hover {
+  color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
