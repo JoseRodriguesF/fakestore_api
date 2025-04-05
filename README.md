@@ -1,38 +1,46 @@
-# FakeStore API
+# FakeStore E-commerce
 
-FakeStore API é uma API simulada para uma loja online, criada para fins de aprendizado e demonstração. Ela fornece endpoints para gerenciar produtos, categorias e usuários.
+Este projeto é um exemplo de aplicação de e-commerce utilizando a API da [FakeStore](https://fakestoreapi.com). Ele permite exibir produtos, visualizar detalhes de cada produto, como preço, descrição, nome e imagem, além de realizar buscas por nome de produtos.
 
 ## Tecnologias Utilizadas
 
-- **React**: Biblioteca JavaScript para construir interfaces de usuário.
-- **Axios**: Cliente HTTP baseado em Promises para fazer requisições.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Axios**: Cliente HTTP baseado em Promises para fazer requisições à API.
 - **React Router DOM**: Biblioteca para roteamento em aplicações React.
 - **Testing Library**: Conjunto de ferramentas para testar componentes React.
+- **CSS**: Estilização da aplicação.
 
-## Scripts Disponíveis
+## Funcionalidades
 
-No diretório do projeto, você pode executar:
+- Exibição de lista de produtos.
+- Visualização de detalhes de cada produto.
+- Pesquisa por nome de produtos.
 
-### `npm start`
+## Como Executar o Projeto
 
-Executa o aplicativo em modo de desenvolvimento.
-Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
+Siga os passos abaixo para executar o projeto localmente:
 
-### `npm test`
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/JoseRodriguesF/fakestore_api.git
+    ```
 
-Inicia o executor de testes no modo interativo.
-Veja a seção sobre [executando testes](https://facebook.github.io/create-react-app/docs/running-tests) para mais informações.
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd fakestore_api
+    ```
 
-### `npm run build`
+3. Instale as dependências:
+    ```sh
+    npm install
+    ```
 
-Cria a aplicação para produção na pasta `build`.
-Ela agrupa corretamente o React no modo de produção e otimiza a construção para o melhor desempenho.
+4. Inicie o servidor de desenvolvimento:
+    ```sh
+    npm start
+    ```
 
-### `npm run eject`
-
-**Nota: esta é uma operação sem retorno. Uma vez que você `eject`, você não pode voltar!**
-
-Se você não estiver satisfeito com a ferramenta de construção e as escolhas de configuração, você pode `eject` a qualquer momento. Este comando removerá a dependência única de construção do seu projeto.
+O aplicativo será aberto em [http://localhost:3000](http://localhost:3000).
 
 ## Estrutura do Projeto
 
@@ -44,24 +52,27 @@ Se você não estiver satisfeito com a ferramenta de construção e as escolhas 
   - **App.js**: Componente principal da aplicação.
   - **index.js**: Ponto de entrada da aplicação.
 
-## Como Executar o Projeto
+## Scripts Disponíveis
 
-1. Clone o repositório:
-    ```sh
-    git clone https://github.com/JoseRodriguesF/fakestore_api.git
-    ```
-2. Navegue até o diretório do projeto:
-    ```sh
-    cd fakestore_api
-    ```
-3. Instale as dependências:
-    ```sh
-    npm install
-    ```
-4. Inicie o servidor:
-    ```sh
-    npm start
-    ```
+No diretório do projeto, você pode executar:
+
+### `npm start`
+
+Executa o aplicativo em modo de desenvolvimento.
+
+### `npm test`
+
+Inicia o executor de testes no modo interativo.
+
+### `npm run build`
+
+Cria a aplicação para produção na pasta `build`. Ela agrupa corretamente o React no modo de produção e otimiza a construção para o melhor desempenho.
+
+### `npm run eject`
+
+**Nota: esta é uma operação sem retorno. Uma vez que você `eject`, você não pode voltar!**
+
+Se você não estiver satisfeito com a ferramenta de construção e as escolhas de configuração, você pode `eject` a qualquer momento. Este comando removerá a dependência única de construção das ferramentas do projeto.
 
 ## Contribuição
 
